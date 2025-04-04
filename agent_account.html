@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Account</title>
+    <link rel="stylesheet" href="asscets/css/agent_account.css">
+</head>
+
+<body>
+
+    <div class="header">এজেন্ট একাউন্ট করুন</div>
+
+    <div class="container">
+        <img src="asscets/images/agent_account.jpg" alt="Cricket Team" class="image">
+
+        <p class="warning">* এজেন্ট একাউন্ট কনফার্ম করতে অবশ্যই <span class="one_thousand"> ১০০০</span> টাকা অগ্রিম
+            পেমেন্ট করতে হবে।</p>
+
+        <p class="text">
+            অগ্রিম পেমেন্ট ছাড়া একাউন্ট করে দিলে, অনেক পরে আর ব্যালেন্স নেয় না। তার এজেন্ট প্যানেল সম্পূর্ণ খালি পড়ে
+            থাকে।
+            তাই যারা বিশ্বাসযোগ্য এজেন্ট নিবেন, তারা অবশ্যই অগ্রিম পেমেন্ট করে নিতে হবে।
+        </p>
+
+        <p class="text">
+            আপনি যখন ব্যালেন্স নিবেন তখন আপনি অগ্রিম যত টাকা করেছেন, তা আপনি কম করলে হবে।
+        </p>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="agreeCheck" class="checkbox" onclick="toggleButton()">
+            <label for="agreeCheck" class="checkbox-label">আমি এই শর্তে রাজি আছি</label>
+        </div>
+
+        <button id="continueBtn" class="btn" disabled onclick="proceed()">এগিয়ে যান</button>
+    </div>
+
+    <script src="asscets/script/agent_account.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagad Payment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asscets/css/payment_method_nagad.css">
+</head>
+
+<body>
+    <div class="amount-display">1000৳</div>
+
+    <div class="transaction-section">
+        <p>ট্রানজেকশন আইডি লিখুন</p>
+        <input type="text" class="transaction-input" id="transactionId" placeholder="...." required>
+    </div>
+
+    <div class="instructions">
+        <p>*167# ডায়াল করে আপনার <span class="highlight">NAGAD</span> মোবাইল মেনুতে যান অথবা <span
+                class="highlight">NAGAD</span> অ্যাপে যান।</p>
+        <p> <span class="highlight">"Send Money"</span> -এ ক্লিক করুন।</p>
+        <p>প্রাপক নম্বর হিসেবে এই নম্বরটি লিখুন: <span class="highlight">01303260848</span></p>
+        <button class="copy-btn" id="copyBtn">কপি করুন</button>
+        <p>টাকার পরিমাণ: <span class="highlight">626</span></p>
+        <p>নিশ্চিত করতে এখন আপনার <span class="highlight">NAGAD</span> মোবাইল মেনু পিন লিখুন।</p>
+        <p>সবকিছু ঠিক থাকলে, আপনি <span class="highlight">NAGAD</span> থেকে একটি নিশ্চিতকরণ বার্তা পাবেন।</p>
+        <p>এখন উপরের বক্সে আপনার <span class="highlight">Transaction ID</span> দিন এবং নিচের VERIFY বাটনে ক্লিক করুন।
+        </p>
+    </div>
+
+    <button class="confirm-btn" id="confirmBtn" disabled>
+        পেমেন্ট কনফার্ম করুন
+    </button>
+
+    <script src="asscets/script/payment_method_nagad.js"></script>
+</body>
+
+</html>

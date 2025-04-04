@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #171717;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-container {
+    padding: 10px;
+    width: 100%;
+    max-width: 28rem;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    padding: 16px 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d1d5db;
+    background-color: #1E40AF;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.banner {
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 16px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.section-title {
+    width: 100%;
+    background-color: #262626;
+    border-radius: 0.5rem;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.section-title h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #d1d5db;
+}
+
+.payment-options {
+    width: 100%;
+    color: #d1d5db;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #262626;
+    padding: 16px;
+    border-radius: 0.5rem;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.payment-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 12px;
+    border-radius: 0.75rem;
+    width: 30%;
+}
+
+.payment-option:hover {
+    transform: scale(1.05);
+    background-color: #2f5cd6;
+}
+
+.payment-option img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 0.75rem;
+}
+
+.payment-option span {
+    font-size: 18px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

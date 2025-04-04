@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>এজেন্ট একাউন্ট করুন</title>
+    <link rel="stylesheet" href="asscets/css/create_an_agent_account.css">
+</head>
+
+<body>
+
+    <div class="title">এজেন্ট একাউন্ট করুন</div>
+    <div class="container">
+
+        <img src="asscets/images/agent_account.jpg" alt="Cricket Player" class="image">
+
+        <form id="agentForm">
+            <div class="form-group">
+                <label for="category">কোন ক্যাটাগরি সাইট নিবেন *</label>
+                <select id="category" required>
+                    <option value="" selected disabled hidden>এখানে ক্লিক করে সিলেক্ট করুন</option>
+                    <option value="Betting">Betting</option>
+                    <option value="Casino">Casino</option>
+                    <option value="Sports">Sports</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="site">কোন সাইট নিবেন *</label>
+                <select id="site" required>
+                    <option value="" selected disabled hidden>এখানে ক্লিক করে সিলেক্ট করুন</option>
+                    <option value="Dream11">Dream11</option>
+                    <option value="Bet365">Bet365</option>
+                    <option value="1xBet">1xBet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="name">আপনার নাম লিখুন *</label>
+                <input type="text" id="name" placeholder="এখানে লিখুন..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="whatsapp">আপনার WhatsApp নাম্বার লিখুন *</label>
+                <input type="tel" id="whatsapp" placeholder="এখানে লিখুন..." required>
+            </div>
+
+            <button type="submit" class="btn">এগিয়ে যান</button>
+        </form>
+    </div>
+
+    <script src="asscets/script/create_an_agent_account.js"></script>
+
+</body>
+
+</html>

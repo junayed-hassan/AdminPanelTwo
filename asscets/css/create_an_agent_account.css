@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background-color: black;
+    padding: 10px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.title {
+    background-color: #1E40AF;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    text-align: left;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: rgb(237, 232, 232);
+}
+
+input {
+    width: 100%;
+    padding: 19px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+select {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: #999; /* Default placeholder color */
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23999'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 20px;
+    padding-right: 40px;
+    line-height: 1.5; /* Added for better text visibility */
+}
+
+select:focus, select:valid {
+    color: white; /* Color when an option is selected */
+}
+
+select option {
+    color: white;
+    background: #222;
+    padding: 10px; /* Added padding for options */
+}
+
+select:focus,
+input:focus {
+    border: 1px solid #1E40AF;
+}
+
+.btn {
+    background-color: #1E40AF;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #163586;
+}
